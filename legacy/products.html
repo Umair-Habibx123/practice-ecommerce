@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock E-commerce Website</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="home.html">E-commerce Shop</a></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+     <!-- Message box -->
+     <!-- Message box container -->
+    <div id="messageBoxContainer" class="message-box-container">
+        <!-- Message box -->
+        <div id="messageBox" class="message-box">
+            <p>Item added to cart!</p>
+            <button onclick="hideMessageBox()">Close</button>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="dropdown">
+            <button class="dropbtn">Select Category</button>
+            <div class="dropdown-content">
+                <a href="#" data-category="all">All</a>
+                <a href="#" data-category="electronics">Electronics</a>
+                <a href="#" data-category="clothing">Clothing</a>
+                <a href="#" data-category="food">Food</a>
+            </div>
+        </div>
+       
+        <section class="products" id="products">
+            <!-- Products will be displayed here -->
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Security Center</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Help & Contact</h3>
+                <ul>
+                    <li><a href="#">Resolution Center</a></li>
+                    <li><a href="#">Seller Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">User Agreement</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow</h3>
+                <ul class="social-media">
+                    <li><a href="#"><img src="facebook.png" alt="Facebook" height="30px" width="30px"></a></li>
+                    <li><a href="#"><img src="twitter.png" alt="Twitter" height="30px" width="30px"></a></li>
+                    <li><a href="#"><img src="instagram.png" alt="Instagram" height="30px" width="30px"></a></li>
+                    <!-- Add more social media icons as needed -->
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+
+</body>
+</html>

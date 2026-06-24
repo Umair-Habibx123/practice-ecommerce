@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopwave — Contact</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div data-header></div>
+
+  <main class="section container">
+    <div class="form-card">
+      <h1 class="section__title">Contact Us</h1>
+      <p class="section__subtitle">Questions, feedback, or just saying hi — we'd love to hear from you.</p>
+      <form class="form" data-contact-form>
+        <div>
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="firstName" type="text" placeholder="John" required>
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input id="lastName" name="lastName" type="text" placeholder="Doe" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Enter your message here…" required></textarea>
+        </div>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <div data-footer></div>
+  <script type="module" src="./js/pages/contact.js"></script>
+</body>
+</html>

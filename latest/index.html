@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopwave — Home</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div data-header></div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="carousel">
+        <div class="carousel__track">
+          <div class="carousel__slide"><img src="./assets/img/banner1.jpg" alt="Seasonal sale banner"></div>
+          <div class="carousel__slide"><img src="./assets/img/banner2.jpg" alt="New arrivals banner"></div>
+          <div class="carousel__slide"><img src="./assets/img/ROW-19392_Fallback_Electronics_770x270.png" alt="Electronics banner"></div>
+        </div>
+        <button class="carousel__btn carousel__btn--prev" aria-label="Previous slide">&#10094;</button>
+        <button class="carousel__btn carousel__btn--next" aria-label="Next slide">&#10095;</button>
+        <div class="carousel__dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section container">
+      <h2 class="section__title">Explore Popular Categories</h2>
+      <p class="section__subtitle">Hand-picked picks across the things you love.</p>
+      <div class="categories" data-categories></div>
+    </section>
+
+    <section class="section container">
+      <h2 class="section__title">Featured Products</h2>
+      <p class="section__subtitle">A taste of the catalogue.</p>
+      <div class="product-grid" data-featured></div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+  <script type="module" src="./js/pages/home.js"></script>
+</body>
+</html>

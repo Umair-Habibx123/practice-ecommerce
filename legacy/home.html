@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock E-commerce Website</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="home.html">E-commerce Shop</a></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="banner1.jpg" alt="Image 1">
+                <img src="banner2.jpg" alt="Image 2">
+                <img src="banner1.jpg" alt="Image 3">
+                <!-- Add more images as needed -->
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </header>
+      <!-- Message box -->
+     <!-- Message box container -->
+     <div id="messageBoxContainer" class="message-box-container">
+        <!-- Message box -->
+        <div id="messageBox" class="message-box">
+            <p>Item added to cart!</p>
+            <button onclick="hideMessageBox()">Close</button>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="ContainerCategories">
+            <h2>Explore Popular Categories</h2>
+            <div class="categories">
+                <div class="category">
+                    <img src="foodCategory.png" alt="Foods" height="200px" width="200px">
+                    <h3>Foods</h3>
+                </div>
+                <div class="category">
+                    <img src="clothingCategory.jpg" alt="Clothing" height="200px" width="200px">
+                    <h3>Clothing</h3>
+                </div>
+                <div class="category">
+                    <img src="ROW-19392_Fallback_Electronics_770x270.png" alt="Electronics" height="200px" width="200px">
+                    <h3>Electronics</h3>
+                </div>
+                <!-- Add more categories as needed -->
+            </div>
+        </section>
+
+        <section class="ContainerProducts">
+        <h2>Products</h2>
+        <section class="products">
+            <div class="product">
+                <img src="clothes1-Photoroom.png-Photoroom.png" alt="Product 2" height="200px" width="200px">
+                <h3>Product 8</h3>
+                <p class="price">$49.99</p>
+                <button onclick="addToCart(this.parentElement)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="lt4980_1_thumb.jpg" alt="Product 2" height="200px" width="200px">
+                <h3>Product 10</h3>
+                <p class="price">$24.99</p>
+                <button onclick="addToCart(this.parentElement)">Add to Cart</button>
+                </div>
+            <div class="product">
+                <img src="OIP (4).jpg" alt="Product 2" height="200px" width="200px">
+                <h3>Product 6</h3>
+                <p class="price">$7.99</p>
+                <button onclick="addToCart(this.parentElement)">Add to Cart</button>
+            </div>
+        <div class="product">
+            <img src="Onion.jpg" alt="Product 2" height="200px" width="200px">
+            <h3>Product 7</h3>
+            <p class="price">$39.99</p>
+            <button onclick="addToCart(this.parentElement)">Add to Cart</button>
+        </div>  
+        <div class="product">
+            <img src="bs30126_1_thumb.jpg" alt="Product 2" height="200px" width="200px">
+            <h3>Product 9</h3>
+            <p class="price">$14.99</p>
+            <button onclick="addToCart(this.parentElement)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="R.png" alt="Product 2" height="200px" width="200px">
+            <h3>Product 7</h3>
+            <p class="price">$39.99</p>
+            <button onclick="addToCart(this.parentElement)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="kharboza.jpg" alt="Product 2" height="200px" width="200px">
+            <h3>Product 5</h3>
+            <p class="price">$4.99</p>
+            <button onclick="addToCart(this.parentElement)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Lemon.jpg" alt="Product 2" height="200px" width="200px">
+            <h3>Product 6</h3>
+            <p class="price">$7.99</p>
+            <button onclick="addToCart(this.parentElement)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="OIP (3).jpg" alt="Product 2" height="200px" width="200px">
+            <h3>Product 5</h3>
+            <p class="price">$4.99</p>
+            <button onclick="addToCart(this.parentElement)">Add to Cart</button>
+        </div>
+    
+        </section>
+           <!-- Add more products as needed -->
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Security Center</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Help & Contact</h3>
+                <ul>
+                    <li><a href="#">Resolution Center</a></li>
+                    <li><a href="#">Seller Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">User Agreement</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow</h3>
+                <ul class="social-media">
+                    <li><a href="#"><img src="facebook.png" alt="Facebook" height="30px" width="30px"></a></li>
+                    <li><a href="#"><img src="twitter.png" alt="Twitter" height="30px" width="30px"></a></li>
+                    <li><a href="#"><img src="instagram.png" alt="Instagram" height="30px" width="30px"></a></li>
+                    <!-- Add more social media icons as needed -->
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
