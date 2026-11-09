@@ -14,6 +14,11 @@ mock online store:
 There is no framework, no build step, and no dependencies — just plain HTML,
 CSS and JavaScript, the way the original was written. Only the *craft* changed.
 
+**▶️ Try it live:** [latest version](https://umair-habibx123.github.io/practice-ecommerce/) ·
+[legacy version](https://umair-habibx123.github.io/practice-ecommerce/legacy/home.html)
+
+![The Shopwave home page: a sale banner carousel and Food, Clothing and Electronics categories](docs/screenshots/home.jpg)
+
 ---
 
 ## 📸 What the site does
@@ -27,6 +32,10 @@ A small pretend storefront with four pages:
 
 Everything is client‑side. The "cart" lives in your browser's `localStorage`,
 so there is no server and no real money involved. 🙂
+
+| Products | Cart |
+| --- | --- |
+| ![The product catalogue with category filter chips and Add to Cart buttons](docs/screenshots/products.jpg) | ![The cart with quantity controls and an order summary](docs/screenshots/cart.jpg) |
 
 ---
 
@@ -78,7 +87,7 @@ on the home page.
 ## 🗂️ Project structure
 
 ```
-Mock_Ecommerce_Website/
+practice-ecommerce/
 ├── README.md            ← you are here
 │
 ├── legacy/              ← the original 1st-semester project (unchanged)
@@ -136,6 +145,14 @@ Thanks for the messy, enthusiastic code. Every duplicated stylesheet and
 every global function was a lesson. This refactor isn't about deleting that —
 the original is right there in [`legacy/`](legacy/), preserved on purpose. It's
 about showing how far a little practice goes. 💙
+
+---
+
+## 📄 License
+
+The code is [MIT](LICENSE) © 2023 [Umair Habib](https://github.com/Umair-Habibx123).
+The product and banner images are stock or web images used for learning, and
+aren't covered by the license.
 
 ---
 
